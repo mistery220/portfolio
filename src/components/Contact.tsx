@@ -23,68 +23,57 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-32 px-4 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan/5 rounded-full blur-3xl" />
-      </div>
-      
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-24 animate-fade-in">
-          <div className="inline-block mb-4">
-            <span className="px-4 py-2 bg-primary/10 text-primary text-sm font-semibold rounded-full border border-primary/20">
-              Let's Connect
-            </span>
-          </div>
-          <h2 className="text-5xl md:text-7xl font-bold mb-8 tracking-tight">
+    <section id="contact" className="py-32 px-4 relative">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-20 animate-fade-in">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-gradient">Contact</span>
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground/90 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to bring your blockchain or full-stack project to life? 
             Let's discuss how I can help you achieve your goals.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="animate-slide-in-left">
-            <div className="glass-card p-10 rounded-3xl shadow-xl">
-              <h3 className="text-4xl font-bold mb-10 text-gradient">Get In Touch</h3>
+            <div className="glass-card p-8 rounded-2xl mb-8">
+              <h3 className="text-3xl font-bold mb-8">Get In Touch</h3>
               
-              <div className="space-y-8">
-                <div className="flex items-start gap-5 group hover:translate-x-2 transition-transform duration-300">
-                  <div className="p-4 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 group-hover:scale-110 transition-transform duration-300">
-                    <Mail className="w-7 h-7 text-primary" />
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-primary/10">
+                    <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-bold mb-2 text-lg">Email</h4>
-                    <p className="text-muted-foreground/90 text-base">alex@blockchain-dev.com</p>
+                    <h4 className="font-semibold mb-1">Email</h4>
+                    <p className="text-muted-foreground">alex@blockchain-dev.com</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-5 group hover:translate-x-2 transition-transform duration-300">
-                  <div className="p-4 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 group-hover:scale-110 transition-transform duration-300">
-                    <Phone className="w-7 h-7 text-primary" />
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-primary/10">
+                    <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-bold mb-2 text-lg">Phone</h4>
-                    <p className="text-muted-foreground/90 text-base">+1 (555) 123-4567</p>
+                    <h4 className="font-semibold mb-1">Phone</h4>
+                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-5 group hover:translate-x-2 transition-transform duration-300">
-                  <div className="p-4 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 group-hover:scale-110 transition-transform duration-300">
-                    <MapPin className="w-7 h-7 text-primary" />
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-primary/10">
+                    <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-bold mb-2 text-lg">Location</h4>
-                    <p className="text-muted-foreground/90 text-base">San Francisco, CA</p>
+                    <h4 className="font-semibold mb-1">Location</h4>
+                    <p className="text-muted-foreground">San Francisco, CA</p>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-10 pt-10 border-t border-border/50">
-                <p className="text-muted-foreground/90 leading-relaxed text-base md:text-lg">
+              <div className="mt-8 pt-8 border-t border-border">
+                <p className="text-muted-foreground leading-relaxed">
                   Available for freelance projects, consulting, and full-time opportunities. 
                   Specializing in blockchain development, smart contracts, and modern web applications.
                 </p>
@@ -93,41 +82,41 @@ export const Contact = () => {
           </div>
 
           <div className="animate-slide-in-right">
-            <form onSubmit={handleSubmit} className="glass-card p-10 rounded-3xl shadow-xl">
-              <h3 className="text-4xl font-bold mb-10 text-gradient">Send a Message</h3>
+            <form onSubmit={handleSubmit} className="glass-card p-8 rounded-2xl">
+              <h3 className="text-3xl font-bold mb-8">Send a Message</h3>
               
-              <div className="space-y-8">
+              <div className="space-y-6">
                 <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
-                  <label className="block text-sm font-semibold mb-3 text-foreground">Name</label>
+                  <label className="block text-sm font-medium mb-2">Name</label>
                   <Input
                     type="text"
                     placeholder="Your name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="bg-card/50 border-border/50 focus:border-primary h-12 text-base rounded-xl transition-all duration-300"
+                    className="bg-card/50 border-border focus:border-primary"
                     required
                   />
                 </div>
 
                 <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
-                  <label className="block text-sm font-semibold mb-3 text-foreground">Email</label>
+                  <label className="block text-sm font-medium mb-2">Email</label>
                   <Input
                     type="email"
                     placeholder="your.email@example.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="bg-card/50 border-border/50 focus:border-primary h-12 text-base rounded-xl transition-all duration-300"
+                    className="bg-card/50 border-border focus:border-primary"
                     required
                   />
                 </div>
 
                 <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
-                  <label className="block text-sm font-semibold mb-3 text-foreground">Message</label>
+                  <label className="block text-sm font-medium mb-2">Message</label>
                   <Textarea
                     placeholder="Tell me about your project..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="bg-card/50 border-border/50 focus:border-primary min-h-[180px] text-base rounded-xl transition-all duration-300"
+                    className="bg-card/50 border-border focus:border-primary min-h-[150px]"
                     required
                   />
                 </div>
@@ -135,7 +124,7 @@ export const Contact = () => {
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground text-lg py-7 font-semibold glow-hover animate-fade-in shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg py-6 glow-hover animate-fade-in"
                   style={{ animationDelay: "0.4s" }}
                 >
                   <Send className="w-5 h-5 mr-2" />
