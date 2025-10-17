@@ -36,31 +36,31 @@ export const Hero = () => {
       />
       <div className="absolute inset-0" style={{ background: "var(--gradient-mesh)" }} />
       
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto animate-fade-in-up">
-        <div className="mb-8 inline-block">
-          <div className="h-2 w-20 bg-primary mb-4 animate-slide-in-right" />
+      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto animate-fade-in-up">
+        <div className="mb-12 inline-block">
+          <div className="h-1 w-24 bg-gradient-to-r from-primary to-cyan mb-6 animate-slide-in-right rounded-full" />
         </div>
         
-        <h1 className="text-7xl md:text-9xl font-bold mb-6 tracking-tight">
-          <span className="text-gradient">ALEX</span>
+        <h1 className="text-7xl md:text-[10rem] font-bold mb-8 tracking-tight leading-none">
+          <span className="text-gradient drop-shadow-2xl">ALEX</span>
         </h1>
         
-        <div className="h-12 md:h-16 mb-8">
-          <p className="text-2xl md:text-3xl text-foreground/90 font-light">
+        <div className="h-14 md:h-20 mb-12">
+          <p className="text-2xl md:text-4xl text-foreground/90 font-light tracking-wide">
             {displayText}
-            <span className="inline-block w-0.5 h-8 bg-primary ml-1 animate-blink" />
+            <span className="inline-block w-0.5 h-10 bg-primary ml-2 animate-blink" />
           </p>
         </div>
 
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
+        <p className="text-xl md:text-2xl text-muted-foreground/90 max-w-4xl mx-auto mb-16 leading-relaxed font-light">
           Architecting decentralized solutions and building scalable full-stack applications 
           that transform industries through cutting-edge blockchain technology and modern web development.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <Button
             size="lg"
-            className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold glow-hover"
+            className="text-lg px-12 py-7 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-semibold glow-hover shadow-xl hover:shadow-2xl transition-all duration-300 rounded-full"
             onClick={scrollToProjects}
           >
             View My Work
@@ -68,7 +68,7 @@ export const Hero = () => {
           <Button
             size="lg"
             variant="outline"
-            className="text-lg px-8 py-6 border-primary/50 text-foreground hover:bg-primary/10 font-semibold"
+            className="text-lg px-12 py-7 border-2 border-primary/50 text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary font-semibold transition-all duration-300 rounded-full"
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
           >
             Get In Touch
