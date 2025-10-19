@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { CustomCursor } from "@/components/CustomCursor";
 import { Hero } from "@/components/Hero";
 import { Skills } from "@/components/Skills";
+import { TechnicalExpertise } from "@/components/TechnicalExpertise";
 import { Projects } from "@/components/Projects";
 import { Contact } from "@/components/Contact";
 import { Button } from "@/components/ui/button";
@@ -52,6 +53,12 @@ const Index = () => {
                 Expertise
               </button>
               <button
+                onClick={() => scrollToSection("technical")}
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
+                Technical
+              </button>
+              <button
                 onClick={() => scrollToSection("projects")}
                 className="text-foreground hover:text-primary transition-colors font-medium"
               >
@@ -91,6 +98,12 @@ const Index = () => {
                 Expertise
               </button>
               <button
+                onClick={() => scrollToSection("technical")}
+                className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+              >
+                Technical
+              </button>
+              <button
                 onClick={() => scrollToSection("projects")}
                 className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
               >
@@ -120,6 +133,9 @@ const Index = () => {
         </div>
         <div id="skills">
           <Skills />
+        </div>
+        <div id="technical">
+          <TechnicalExpertise />
         </div>
         <div id="projects">
           <Projects />
@@ -183,6 +199,14 @@ const Index = () => {
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       Expertise
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      onClick={() => scrollToSection("technical")}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      Technical
                     </button>
                   </li>
                   <li>

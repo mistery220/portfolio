@@ -107,6 +107,14 @@ export default {
         "blink": {
           "0%, 100%": { borderColor: "transparent" },
           "50%": { borderColor: "hsl(180 100% 50%)" }
+        },
+        "shimmer": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" }
+        },
+        "slide-in-left-bar": {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" }
         }
       },
       animation: {
@@ -120,7 +128,9 @@ export default {
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
         "float": "float 3s ease-in-out infinite",
         "typing": "typing 3.5s steps(40, end)",
-        "blink": "blink 0.7s infinite"
+        "blink": "blink 0.7s infinite",
+        "shimmer": "shimmer 2s infinite",
+        "slide-in-left-bar": "slide-in-left-bar 1s ease-out"
       },
     },
   },
