@@ -107,7 +107,7 @@ export const Projects = () => {
 
   return (
     <section id="projects" className="py-32 px-4 relative">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-gradient">Featured Projects</span>
