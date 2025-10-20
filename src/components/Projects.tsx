@@ -20,84 +20,108 @@ const allProjects = [
     description: "Comprehensive decentralized finance platform with automated market making, liquidity pools, and yield farming capabilities.",
     image: projectDefi,
     tags: ["Solidity", "React", "Web3.js", "DeFi"],
-    details: "Built advanced smart contracts for decentralized trading with $50M+ TVL, implemented automated market maker algorithms, and created seamless Web3 integration for 10,000+ active users."
+    details: "Built advanced smart contracts for decentralized trading with $50M+ TVL, implemented automated market maker algorithms, and created seamless Web3 integration for 10,000+ active users.",
+    liveUrl: "https://defi-platform-demo.vercel.app",
+    sourceUrl: "https://github.com/alex/defi-trading-platform"
   },
   {
     title: "NFT Marketplace",
     description: "Full-featured NFT marketplace supporting ERC-721 and ERC-1155 tokens with auction system and royalty management.",
     image: projectNft,
     tags: ["NFT", "IPFS", "Smart Contracts", "TypeScript"],
-    details: "Developed complete NFT trading infrastructure with lazy minting, royalty distribution system, and IPFS storage integration. Processed over $2M in transaction volume."
+    details: "Developed complete NFT trading infrastructure with lazy minting, royalty distribution system, and IPFS storage integration. Processed over $2M in transaction volume.",
+    liveUrl: "https://nft-marketplace-demo.vercel.app",
+    sourceUrl: "https://github.com/alex/nft-marketplace"
   },
   {
     title: "Supply Chain Tracker",
     description: "Enterprise blockchain solution for transparent supply chain management with real-time tracking and smart contract verification.",
     image: projectSupply,
     tags: ["Hyperledger", "Node.js", "MongoDB", "IoT"],
-    details: "Implemented end-to-end supply chain visibility using Hyperledger Fabric, integrated IoT sensors for real-time tracking, and automated compliance verification for Fortune 500 clients."
+    details: "Implemented end-to-end supply chain visibility using Hyperledger Fabric, integrated IoT sensors for real-time tracking, and automated compliance verification for Fortune 500 clients.",
+    liveUrl: "https://supply-chain-tracker.vercel.app",
+    sourceUrl: "https://github.com/alex/supply-chain-tracker"
   },
   {
     title: "SaaS Analytics Dashboard",
     description: "Modern full-stack SaaS platform with real-time analytics, user management, and integrated payment processing.",
     image: projectWebapp,
     tags: ["Next.js", "PostgreSQL", "Stripe", "AWS"],
-    details: "Created scalable multi-tenant architecture serving 50,000+ users, implemented real-time data processing with WebSockets, and integrated Stripe for subscription management."
+    details: "Created scalable multi-tenant architecture serving 50,000+ users, implemented real-time data processing with WebSockets, and integrated Stripe for subscription management.",
+    liveUrl: "https://analytics-dashboard-demo.vercel.app",
+    sourceUrl: "https://github.com/alex/saas-analytics-dashboard"
   },
   {
     title: "Crypto Trading Bot",
     description: "Intelligent trading bot with machine learning algorithms for automated cryptocurrency trading and portfolio optimization.",
     image: projectTrading,
     tags: ["Python", "Machine Learning", "Trading", "API"],
-    details: "Developed ML-powered trading algorithms achieving 127% ROI, integrated with major exchanges via REST and WebSocket APIs, and implemented advanced risk management strategies."
+    details: "Developed ML-powered trading algorithms achieving 127% ROI, integrated with major exchanges via REST and WebSocket APIs, and implemented advanced risk management strategies.",
+    liveUrl: "https://crypto-trading-bot-demo.vercel.app",
+    sourceUrl: "https://github.com/alex/crypto-trading-bot"
   },
   {
     title: "DAO Governance System",
     description: "Decentralized autonomous organization platform with on-chain voting, proposal management, and treasury control.",
     image: projectDao,
     tags: ["DAO", "Governance", "Voting", "Web3"],
-    details: "Built comprehensive governance framework with gas-optimized voting mechanisms, timelock controllers, and multi-sig treasury management for 5,000+ token holders."
+    details: "Built comprehensive governance framework with gas-optimized voting mechanisms, timelock controllers, and multi-sig treasury management for 5,000+ token holders.",
+    liveUrl: "https://dao-governance-demo.vercel.app",
+    sourceUrl: "https://github.com/alex/dao-governance-system"
   },
   {
     title: "Metaverse Platform",
     description: "Immersive Web3 metaverse platform with 3D virtual worlds, NFT integration, and blockchain-based digital asset ownership.",
     image: projectMetaverse,
     tags: ["Three.js", "WebGL", "NFT", "Virtual Reality"],
-    details: "Architected 3D virtual environment with NFT land parcels, implemented avatar customization system, and created virtual economy with 20,000+ monthly active users."
+    details: "Architected 3D virtual environment with NFT land parcels, implemented avatar customization system, and created virtual economy with 20,000+ monthly active users.",
+    liveUrl: "https://metaverse-platform-demo.vercel.app",
+    sourceUrl: "https://github.com/alex/metaverse-platform"
   },
   {
     title: "Digital Identity System",
     description: "Self-sovereign identity platform with decentralized verification, biometric authentication, and privacy-preserving credentials.",
     image: projectIdentity,
     tags: ["Identity", "Zero-Knowledge", "Biometrics", "Privacy"],
-    details: "Developed zero-knowledge proof-based identity verification, integrated biometric authentication, and deployed DID standards-compliant system for government institutions."
+    details: "Developed zero-knowledge proof-based identity verification, integrated biometric authentication, and deployed DID standards-compliant system for government institutions.",
+    liveUrl: "https://digital-identity-demo.vercel.app",
+    sourceUrl: "https://github.com/alex/digital-identity-system"
   },
   {
     title: "Blockchain Gaming Platform",
     description: "Play-to-earn gaming ecosystem with NFT characters, in-game asset marketplace, and token-based reward system.",
     image: projectGaming,
     tags: ["Gaming", "NFT", "Play-to-Earn", "Unity"],
-    details: "Created engaging P2E game economy with NFT character breeding mechanics, implemented secure asset trading marketplace, and distributed $1M+ in player rewards."
+    details: "Created engaging P2E game economy with NFT character breeding mechanics, implemented secure asset trading marketplace, and distributed $1M+ in player rewards.",
+    liveUrl: "https://blockchain-gaming-demo.vercel.app",
+    sourceUrl: "https://github.com/alex/blockchain-gaming-platform"
   },
   {
     title: "Healthcare Data Platform",
     description: "HIPAA-compliant healthcare blockchain for secure medical records management and interoperability between healthcare providers.",
     image: projectHealthcare,
     tags: ["Healthcare", "HIPAA", "Privacy", "Interoperability"],
-    details: "Built secure patient data exchange network with encrypted storage, implemented consent management system, and achieved seamless EHR integration for 50+ hospitals."
+    details: "Built secure patient data exchange network with encrypted storage, implemented consent management system, and achieved seamless EHR integration for 50+ hospitals.",
+    liveUrl: "https://healthcare-data-demo.vercel.app",
+    sourceUrl: "https://github.com/alex/healthcare-data-platform"
   },
   {
     title: "Real Estate Tokenization",
     description: "Fractional real estate investment platform enabling property tokenization and automated dividend distribution.",
     image: projectRealestate,
     tags: ["Real Estate", "Tokenization", "Investment", "Legal"],
-    details: "Tokenized $100M+ in real estate assets, automated dividend payments through smart contracts, and created compliant investment vehicle for international investors."
+    details: "Tokenized $100M+ in real estate assets, automated dividend payments through smart contracts, and created compliant investment vehicle for international investors.",
+    liveUrl: "https://realestate-tokenization-demo.vercel.app",
+    sourceUrl: "https://github.com/alex/realestate-tokenization"
   },
   {
     title: "Cross-Chain Bridge",
     description: "Secure cross-chain bridge protocol enabling seamless asset transfers between multiple blockchain networks.",
     image: projectBridge,
     tags: ["Bridge", "Cross-Chain", "Interoperability", "Security"],
-    details: "Engineered trustless bridge protocol with multi-signature validation, processed $500M+ in cross-chain transfers, and maintained zero security incidents across 8 blockchain networks."
+    details: "Engineered trustless bridge protocol with multi-signature validation, processed $500M+ in cross-chain transfers, and maintained zero security incidents across 8 blockchain networks.",
+    liveUrl: "https://cross-chain-bridge-demo.vercel.app",
+    sourceUrl: "https://github.com/alex/cross-chain-bridge"
   },
 ];
 
@@ -162,17 +186,23 @@ export const Projects = () => {
                       size="sm"
                       variant="outline"
                       className="flex-1 border-primary/50 hover:bg-primary/10"
+                      asChild
                     >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Live Demo
+                      </a>
                     </Button>
                     <Button
                       size="sm"
                       variant="outline"
                       className="flex-1 border-primary/50 hover:bg-primary/10"
+                      asChild
                     >
-                      <Github className="w-4 h-4 mr-2" />
-                      Source
+                      <a href={project.sourceUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-2" />
+                        Source
+                      </a>
                     </Button>
                   </div>
                 </div>
